@@ -1,0 +1,146 @@
+/* General styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Header styling */
+.header {
+    background-color: red; /* Red background for header */
+    color: white; /* Text color for better contrast */
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main styling */
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Spread content to reduce white space */
+    align-items: center;
+    padding: 20px; /* Add some padding around main content */
+}
+
+.main h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Styling for the added quote */
+.main .quote {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Flexbox for images */
+.model_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between images and the 'OR' text */
+    margin-bottom: 20px;
+}
+
+.model_image img {
+    
+    width: 200px; /* Increased size for larger images */
+    height: 200px;
+    border-radius: 50%; /* Circular images */
+    object-fit: cover; /* Maintain aspect ratio */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.model_image img:hover {
+    transform: scale(1.1); /* Enlarge image slightly */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Adds a more pronounced shadow */
+}
+
+.model_image img:active {
+    transform: scale(0.95); /* Slightly shrink image on click */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Less intense shadow on click */
+}
+
+
+/* Styling for 'Who's Hotter? Click to Choose.' */
+.choose-text {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer; /* Makes the text look clickable */
+}
+
+.footer {
+    text-align: center; /* Center align text */
+    margin: 0; /* Add some margin */
+    padding: 10px 20px; /* Add padding to make it look like a button */
+    border: 2px solid #dc160c; /* Blue border for the button */
+    border-radius: 5px; /* Slightly rounded corners */
+    background-color: #f0f0f0; /* Light background color */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.footer:hover {
+    background-color: #dc160c; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    transform: scale(1.05); /* Slightly scale up the button */
+}
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+    justify-content: center; /* Center the modal */
+    align-items: center; /* Center the modal */
+}
+
+.modal-content {
+    position: relative;
+    color: white;
+    margin: auto;
+    padding: 20px;
+    max-width: 80%;
+}
+
+.modal-content img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}

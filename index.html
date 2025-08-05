@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Comparison</title>
+    <link rel="stylesheet" href="mashstyle.css">
+    <script src="hotNot.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Rate My Bottle Girls</h1>
+    </div>
+
+    <div class="main">
+        <h2>Who's Hotter? Click to Choose.</h2>
+
+        <div class="model_image">
+            <img id="img1" src="" onclick="compareImages(1, 2)">
+            <p>OR</p>
+            <img id="img2" src="" onclick="compareImages(2, 1)">
+        </div>
+
+        <p class="rating-info">Current Ratings: <span id="rating1">1000</span> vs <span id="rating2">1000</span></p>
+    </div>
+
+    <div class="footer" onclick="openRankingsModal()">
+        <p style="margin: 0;">Click here to view the ranking list!</p>
+    </div>
+    
+
+    <!-- Rankings Modal Structure -->
+    <div id="rankings-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRankingsModal()">&times;</span>
+            <h2>Ranking List</h2>
+            <div id="rankings-list-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</div>
+</body>
+</html>
