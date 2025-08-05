@@ -1,4 +1,5 @@
 // List of image file names
+
 const imageSources = [
     'photos/u1.png', 'photos/u2.png', 'photos/u3.png', 'photos/tori.png', 'photos/stepheni.png',
     'photos/savvi.png', 'photos/nora.png', 'photos/mala.png', 'photos/lorraine.png', 'photos/lina.png',
@@ -115,5 +116,6 @@ function closeRankingsModal() {
     rankingsModal.style.display = 'none'; // Hide the modal
 }
 
-// Load the first pair of images when the page is loaded
+//
+Load the first pair of images when the page is loaded
 window.onload = loadNextPair;
